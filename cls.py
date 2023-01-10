@@ -12,4 +12,8 @@ class SchoolMember:
         return f'My name in {cls.name},i am {cls.age + 1} old'
 
 
+class Friend:
+    def __init__(self, name, age, same_school=True):
+        self.name = name
+        self.age = age
 
