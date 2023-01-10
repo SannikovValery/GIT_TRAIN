@@ -11,5 +11,7 @@ class SchoolMember:
     def get_older(cls):
         return f'My name in {cls.name},i am {cls.age + 1} old'
 
-
-
+    @staticmethod
+    def able_to_drive(self, age):
+        answer = {True: 'YES', False: 'NO'}
+        return f'Able to drive:{answer[age >= 16]}'
